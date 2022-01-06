@@ -1,0 +1,49 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Global styles */
+  a {
+    text-decoration: none;
+    color: #1e90ff;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.name-site {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.name-site span
+{
+ color: blue;
+}
+
+.nav-container{
+    border-top: 1px solid #eee;
+}
+
+.main-navigation {
+    padding: 50px 0px ;
+    display: flex;
+    justify-content: space-between;
+    justify-items: auto;
+}
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+
+
