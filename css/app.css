@@ -49,10 +49,12 @@ html {
   font-weight: 900;
   padding: 1rem;
   transition: background-color .3s ease-out;
+  border: none;
   }
 
   .btn:hover{
     background-color: #769c02;
+    cursor: pointer;
   }
 
   /* Utilility classes */
@@ -301,9 +303,68 @@ html {
   color: #037bc0;
 }
 
+.post-blog{
+  width: 60rem;
+  margin: 0 auto;  
+}
+
+.gallery{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.gallery img {
+  height: 40rem;
+  width:  40rem;
+  object-fit: cover;
+}
+
+/* style for form */
+.form{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.form fieldset{
+
+  border:.1rem solid #000;
+  margin-bottom: 2rem;
+
+}
+
+.form legend{
+  background-color:#005485;
+  width: 100%;
+  color:#fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;  
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.field{
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.field label{
+  flex-basis: 10rem;
+  padding: 1rem; 
+}
 
 
-
+.field input:not([type="radio"]),
+textarea,
+select{
+  flex:1;
+  border: .1rem solid #e1e1e1;
+  padding: 1rem;
+}
 
 
 

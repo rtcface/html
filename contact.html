@@ -31,7 +31,71 @@
     </div>
 
     <main class="main-container container">
-        <h2 class="text-center">Name Page</h2>
+        <h2 class="text-center">Contact</h2>
+        <form class="form">
+            <fieldset>
+                <legend>Contact us</legend>                
+                <div class="field">
+                    <label for="name">User Name:</label>
+                    <input id="name" type="text" placeholder="Your name">
+                </div>
+                <div class="field">
+                    <label for="subject">Subject:</label>
+                    <input id="subject" type="text" placeholder="Your subject">
+                </div>
+                <div class="field">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Your E-mail">
+                </div>
+                <div class="field">
+                    <label for="phone">Phone:</label>
+                    <input id="phone" type="tel" placeholder="Your Phone">
+                </div>
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" cols="20" rows="10"></textarea>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Country</legend>
+                <div class="field">
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option value="">Select a country</option>
+                        <option value="1">USA</option>
+                        <option value="2">UK</option>
+                        <option value="3">France</option>
+                        <option value="4">Germany</option>
+                        <option value="5">Italy</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>More Information</legend>                            
+                <div class="field">
+                    <label for="client">Client</label>
+                    <input type="radio" name="type-user" id="client">                    
+                </div>
+                <div class="field">
+                    <label for="provider">Provider</label>
+                    <input type="radio" name="type-user" id="provider">
+                </div>
+                <div class="field">
+                    <label for="categories">Categories</label>
+                    <input list="categories" name="categories">
+                    <datalist id="categories">
+                        <option value="Kitchen"> 
+                        <option value="Home">
+                        <option value="Garages">
+                        <option value="Yard">
+                        <option value="Bedroom">
+                        <option value="Office">
+                    </datalist>
+                </div>
+            </fieldset>
+            <input class="btn" type="submit" value="Send Information">
+        </form>
     </main>
 
     
